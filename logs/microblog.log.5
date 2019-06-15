@@ -1,0 +1,103 @@
+2019-05-27 17:15:32,742 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-28 07:27:21,669 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-28 07:50:55,669 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-28 07:52:22,916 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-28 07:52:44,256 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-28 21:50:48,500 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-28 21:52:44,076 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-29 11:54:22,708 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-29 11:57:38,183 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-29 12:57:39,290 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-29 13:01:09,700 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-29 13:03:20,091 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-30 16:52:53,533 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-30 16:54:37,326 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-30 16:57:42,733 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-30 16:59:47,940 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-31 10:07:29,054 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-31 10:10:58,429 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
+2019-05-31 10:11:34,074 ERROR: Exception on /login [POST] [in /Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/digitalislands/Projects/microblog/app/routes.py", line 44, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/Users/digitalislands/Projects/microblog/app/models.py", line 34, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-05-31 10:11:40,033 ERROR: Exception on /login [POST] [in /Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/digitalislands/Projects/microblog/app/routes.py", line 44, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/Users/digitalislands/Projects/microblog/app/models.py", line 34, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-05-31 10:12:06,871 ERROR: Exception on /login [POST] [in /Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/digitalislands/Projects/microblog/app/routes.py", line 44, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/Users/digitalislands/Projects/microblog/app/models.py", line 34, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-05-31 10:12:23,808 ERROR: Exception on /login [POST] [in /Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/digitalislands/Projects/microblog/app/routes.py", line 44, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/Users/digitalislands/Projects/microblog/app/models.py", line 34, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/Users/digitalislands/Projects/microblog/venv/lib/python3.7/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-05-31 10:46:35,242 INFO: Microblog startup [in /Users/digitalislands/Projects/microblog/app/__init__.py:45]
