@@ -1,0 +1,35 @@
+body {
+  font-family: 'Avenir', sans-serif;
+  color: #252626;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+
+}
+
+h1 {
+
+  color: red;
+}
+
+p {
+  font-family: 'Avenir', sans-serif;
+  color: #252626;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+}
+
+.container{
+  font-family: 'Avenir', sans-serif;
+  color: #252626;
+}
+
+.navbar-header{
+  font-family: 'Avenir', sans-serif;
+  color: red;
+}
